@@ -1,0 +1,68 @@
+# First Duplicate Element in an Array (Using `unordered_map`)
+
+## Aim
+
+To find the first duplicate element in an array using the C++ Standard Template Library (STL) `unordered_map`.
+
+---
+
+## Algorithm
+
+1. Read the size of the array `n`.
+2. Input all `n` elements into the array.
+3. Create an `unordered_map<int, int>` to store the frequency of each element.
+4. Traverse the array from left to right.
+5. For each element:
+
+   * Increment its frequency in the map.
+   * If its frequency becomes `2`, it is the first duplicate encountered.
+   * Print the element and terminate the program.
+6. If no element reaches a frequency of `2`, print `"No duplicate element found"`.
+
+---
+
+## Time Complexity
+
+* **Average Case:** `O(n)`
+
+Each element is processed once, and insertion/lookup in `unordered_map` takes constant time on average.
+
+---
+
+## Space Complexity
+
+* **O(n)**
+
+An `unordered_map` is used to store the frequency of each distinct element.
+
+---
+
+## Example
+
+### Input
+
+```text
+5
+2 4 1 4 3
+```
+
+### Output
+
+```text
+First duplicate element: 4
+```
+
+---
+
+## STL Used
+
+* `unordered_map`
+
+  * Stores the frequency of each array element.
+  * Provides average `O(1)` insertion and lookup time.
+
+---
+
+## Conclusion
+
+This program efficiently finds the first duplicate element encountered during a left-to-right traversal of the array by using an `unordered_map` to maintain the frequency of elements. Compared to the brute-force approach (`O(n²)`), this solution runs in linear time (`O(n)`), making it suitable for large input sizes.

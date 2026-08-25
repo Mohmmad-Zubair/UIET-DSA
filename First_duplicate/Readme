@@ -1,0 +1,29 @@
+# README - First Duplicate Element
+
+## Aim
+This folder contains programs to find the first duplicate element in an array using two different approaches.
+
+---
+
+## Algorithm
+1. Read the array size and elements.
+2. For the brute-force version, compare each element with all previous elements.
+3. For the mapping version, store the index of each element in a hash map and check for mismatch.
+
+---
+
+## How it works
+The brute-force method checks every pair of elements to detect a duplicate, while the mapping method uses a dictionary-like structure to track positions efficiently.
+
+---
+
+## Functionality
+- Finds the first duplicated value in the array
+- Prints the position of the duplicate if found
+- Prints -1 if no duplicate exists
+
+---
+
+## Time and Space Complexity
+- Brute-force version: Time O(n^2), Space O(1)
+- Mapping version: Time O(n), Space O(n)

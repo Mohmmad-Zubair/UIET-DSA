@@ -1,0 +1,124 @@
+# Singly Linked List Operations (Menu-Driven)
+
+## Aim
+
+To implement a **Singly Linked List** in C++ and perform basic operations such as insertion, deletion, searching, and displaying the linked list using a menu-driven program.
+
+---
+
+## Algorithm
+
+### Step 1: Create the Linked List
+
+1. Read the number of nodes `n`.
+2. Input the elements of the linked list.
+3. Create a new node for each element.
+4. If the list is empty, make the new node the head.
+5. Otherwise, append the node at the end of the linked list.
+
+---
+
+### Step 2: Display Menu
+
+Repeat the following operations until the user chooses to exit:
+
+1. **Insert Element**
+
+   * Read the position and element.
+   * Traverse to the desired position.
+   * Create a new node.
+   * Adjust the links to insert the node.
+
+2. **Delete Element**
+
+   * Read the position.
+   * Traverse to the node before the target position.
+   * Update the links to remove the desired node.
+
+3. **Search Element**
+
+   * Read the element to search.
+   * Traverse the linked list.
+   * If found, display its position.
+   * Otherwise, display that the element is not present.
+
+4. **Display Linked List**
+
+   * Traverse the linked list from the head.
+   * Print each node's data.
+
+5. **Exit**
+
+   * Terminate the program.
+
+---
+
+## Operations Performed
+
+* Create a Singly Linked List
+* Insert a Node
+* Delete a Node
+* Search an Element
+* Display the Linked List
+* Exit the Program
+
+---
+
+## Time Complexity
+
+| Operation | Time Complexity |
+| --------- | --------------- |
+| Creation  | O(n)            |
+| Insertion | O(n)            |
+| Deletion  | O(n)            |
+| Searching | O(n)            |
+| Display   | O(n)            |
+
+---
+
+## Space Complexity
+
+* **O(n)**
+
+where **n** is the number of nodes in the linked list.
+
+---
+
+## Example
+
+### Input
+
+```text
+Enter the size of Linked List:
+5
+
+10 20 30 40 50
+```
+
+### Menu
+
+```text
+----- MENU -----
+1. Insert Element
+2. Delete Element
+3. Search Element
+4. Display Linked List
+5. Exit
+```
+
+---
+
+## Concepts Used
+
+* Classes and Objects
+* Dynamic Memory Allocation (`new`)
+* Pointers
+* Singly Linked List
+* Menu-Driven Programming
+* Traversal
+
+---
+
+## Conclusion
+
+This program demonstrates the implementation of a **Singly Linked List** using dynamic memory allocation in C++. It allows the user to perform fundamental linked list operations such as insertion, deletion, searching, and displaying through a menu-driven interface. These operations form the foundation for understanding dynamic data structures and pointer manipulation in C++.

@@ -1,0 +1,102 @@
+# README - Speed Halving Counter (C++)
+
+## Aim
+
+To implement a C++ program that determines how many times a given speed must be repeatedly divided by 2 until it becomes less than or equal to **0.00001**.
+
+---
+
+## Algorithm
+
+### Step 1: Define Function
+1. Create a function `tips(float speed)`.
+2. Initialize a counter variable `count` to 0.
+
+### Step 2: Repeatedly Halve the Speed
+1. While the speed is greater than `0.00001`:
+   - Increment the counter.
+   - Divide the speed by 2.
+
+### Step 3: Return Result
+1. Return the value of `count`.
+
+### Step 4: Main Function
+1. Call the `tips()` function with the desired speed.
+2. Display the returned count.
+
+---
+
+## How It Works
+
+The program takes an initial speed value as input (in this program, `39.7` is passed directly to the function).
+
+Inside the `tips()` function, the speed is repeatedly divided by **2**. After each division, a counter is incremented. This process continues until the speed becomes less than or equal to **0.00001**.
+
+Finally, the function returns the total number of divisions performed, and the `main()` function prints this value.
+
+---
+
+## Function Used
+
+### `tips(float speed)`
+
+**Purpose:**
+- Counts the number of times a speed value can be halved before it becomes very close to zero (`≤ 0.00001`).
+
+**Parameters:**
+- `speed` – Initial speed value of type `float`.
+
+**Returns:**
+- An integer representing the total number of halvings performed.
+
+---
+
+## Time Complexity
+
+The speed is divided by 2 in every iteration.
+
+- **Time Complexity:** **O(log₂ n)**
+- **Space Complexity:** **O(1)**
+
+---
+
+## Sample Input
+
+```cpp
+tips(39.7);
+```
+
+---
+
+## Sample Output
+
+```
+22
+```
+
+---
+
+## Explanation
+
+Starting with **39.7**, the value is repeatedly divided by **2**:
+
+```
+39.7
+19.85
+9.925
+4.9625
+...
+0.00000946
+```
+
+After **22** divisions, the value becomes less than **0.00001**, so the loop stops and the program prints:
+
+```
+22
+```
+
+---
+
+## Conclusion
+
+This program demonstrates the use of a **while loop** and a **function** to solve a repetitive mathematical problem. Since the value is halved in each iteration, the number of iterations grows logarithmically, making the algorithm efficient with a time complexity of **O(log n)**.

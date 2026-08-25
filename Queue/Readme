@@ -1,0 +1,32 @@
+# README - Queue Operations
+
+## Aim
+This folder contains queue-related programs that demonstrate the basic operations of a queue using different implementations.
+
+---
+
+## Algorithm
+1. Create a queue and initialize it as empty.
+2. For the STL queue version, push elements into the queue and remove the front element using pop.
+3. For the linked-list version, add nodes at the rear and remove nodes from the front.
+4. Check whether the queue is empty and display the contents when needed.
+
+---
+
+## How it works
+A queue follows the FIFO (First In, First Out) principle. The first inserted element is removed first. In the linked-list version, the front pointer points to the first node and the rear pointer points to the last node.
+
+---
+
+## Functionality
+- Insert an element into the queue
+- Remove the front element
+- Check whether the queue is empty
+- Display the contents of the queue
+
+---
+
+## Time and Space Complexity
+- Enqueue / Dequeue: O(1) average
+- Display: O(n)
+- Extra space: O(n) for the linked-list version and queue storage

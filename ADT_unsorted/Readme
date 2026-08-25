@@ -1,0 +1,127 @@
+# README - Unordered Array Operations (C++)
+
+## Aim
+
+To implement basic operations on an unordered array using C++. It allows the user to perform insertion, deletion, searching, and displaying of array elements 
+
+---
+
+## Algorithm
+
+### Step 1: Input Array
+1. Start the program.
+2. Read the number of elements `n`.
+3. Read the `n` elements into the array.
+
+### Step 2: Display Menu
+Display the following options repeatedly until the user chooses to exit:
+- Insert Element
+- Delete Element
+- Search Element
+- Display Array
+- Exit
+
+### Step 3: Perform Selected Operation
+
+#### A. Insertion
+1. Read the position where the element is to be inserted.
+2. Check if the position is valid.
+3. Shift all elements one position to the right from the insertion position.
+4. Insert the new element.
+5. Increase the array size by one.
+
+#### B. Deletion
+1. Read the position of the element to be deleted.
+2. Check if the position is valid.
+3. Shift all elements after the deleted position one position to the left.
+4. Decrease the array size by one.
+
+#### C. Searching
+1. Read the element to be searched.
+2. Traverse the array using linear search.
+3. If the element is found, display its index.
+4. Otherwise, display "Element not found."
+
+#### D. Display
+1. Traverse the array.
+2. Print all the elements.
+
+#### E. Exit
+Terminate the program.
+
+---
+
+## How It Works
+
+The program first asks the user to enter the number of elements and stores them in an unordered array.
+
+It then repeatedly displays a menu of operations.
+
+- **Insertion:** The user enters the position and the value to insert. The program shifts the existing elements to the right and inserts the new element.
+- **Deletion:** The user specifies the position of the element to remove. The program shifts the remaining elements left to fill the gap.
+- **Search:** Since the array is unordered, the program uses **Linear Search**, checking each element one by one until the target is found or the array ends.
+- **Display:** Prints all the current elements of the array.
+- **Exit:** Ends the execution of the program.
+
+The menu continues to appear after every operation, allowing the user to perform multiple operations without restarting the program.
+
+---
+
+## Operations Supported
+
+- Insert an element at any valid position.
+- Delete an element from any valid position.
+- Search for an element using Linear Search.
+- Display the current array.
+- Exit the program.
+
+---
+
+## Time Complexity
+
+| Operation | Time Complexity |
+|-----------|-----------------|
+| Insertion | O(n) |
+| Deletion | O(n) |
+| Search | O(n) |
+| Display | O(n) |
+
+---
+
+## Space Complexity
+
+- **Space Complexity:** O(1) (excluding the fixed-size array used for storage)
+
+---
+
+## Sample Input
+
+Enter the number of elements: 5
+
+Enter the elements:
+
+10 20 30 40 50
+
+---
+
+## Sample Output
+
+```
+----- MENU -----
+1. Insert Element
+2. Delete Element
+3. Search Element
+4. Display Array
+5. Exit
+
+Enter your choice: 3
+Enter element to search: 30
+
+Element found at index 2.
+```
+
+---
+
+## Conclusion
+
+This program demonstrates the basic operations on an unordered array using a menu-driven approach. Since the array is unordered, searching is performed using Linear Search, while insertion and deletion require shifting of elements. It provides a simple understanding of array manipulation techniques in C++.

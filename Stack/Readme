@@ -1,0 +1,32 @@
+# README - Stack Operations
+
+## Aim
+This folder contains stack-related programs that demonstrate the basic stack operations using different implementations.
+
+---
+
+## Algorithm
+1. Create a stack and initialize it as empty.
+2. For the STL stack version, push elements onto the stack and remove the top element using pop.
+3. For the linked-list version, insert nodes at the head and remove them from the head.
+4. Check whether the stack is empty and display its contents when needed.
+
+---
+
+## How it works
+A stack follows the LIFO (Last In, First Out) principle. The last inserted element is removed first. In the linked-list version, the head acts as the top of the stack.
+
+---
+
+## Functionality
+- Push an element onto the stack
+- Pop the top element
+- Check whether the stack is empty
+- Display the contents of the stack
+
+---
+
+## Time and Space Complexity
+- Push / Pop: O(1)
+- Display: O(n)
+- Extra space: O(n) for the linked-list version and stack storage
